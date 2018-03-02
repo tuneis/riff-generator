@@ -8,7 +8,6 @@
         <h1>The Riff Generator</h1>
         <hr />
         <p>Do you need inspiration? Out of creativity? Give the Riff Generator a try! Fill out the form below and we'll generate a riff for you based on the information you have provided. It will then prompt you to download the generated MIDI file which you can import into Guitar Pro or your DAW of choice!</p>
-        <small>Note: MIDI playback isn't supported in most phones. You will need a MIDI player app in order to play back what is generated if you are viewing this from your phone.</small>
         <form asp-controller="Home" asp-action="Generate" method="post">
             <div class="form-row">
                 <div class="col-md-12">
@@ -64,14 +63,17 @@
             </div>
 
             @*<div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
-                </div>
-            </div>*@
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>*@
             <button type="submit" class="btn btn-primary">Generate</button>
+            <br />
+            <small>Note: MIDI playback isn't supported in most phones. You will need a MIDI player app in order to play back what is generated if you are viewing this from your phone.</small>
+
         </form>
 
     </div>
